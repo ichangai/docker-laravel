@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: laravel_app:v1
+    image: laravel_app:v1.1.0
     container_name: laravel_app
     ports:
       - "8000:8000"
@@ -57,7 +57,7 @@ services:
       - "8080:80"
     networks:
       - app-network
-      
+
 volumes:
   dbdata:
     driver: local
