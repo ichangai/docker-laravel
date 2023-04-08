@@ -55,7 +55,7 @@ RUN chmod -R 755 /var/www/html/storage /var/www/html/bootstrap/cache
 
 # Expose port 9000 and start php-fpm server
 EXPOSE 8000
-CMD ["php-fpm", "php", "artisan", "serve", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["php-fpm"]
 
 
 
